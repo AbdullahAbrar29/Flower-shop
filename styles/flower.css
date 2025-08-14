@@ -25,6 +25,12 @@ body{
 .flex{
   display: flex;
 }
+.color-2{
+  color: #E95A08;
+}
+.title{
+  color: rgba(0, 0, 0, 0.5);
+}
 
 
 /*nav-bar style*/
@@ -50,6 +56,27 @@ body{
   font-weight: 600;
 }
 
+/*Banner style*/
+.banner{
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 120px 0;
+}
+.banner-collum{
+  width: 50%;
+  margin: 16px;
+  
+}
+.banner-heading{
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.banner-img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 
@@ -58,6 +85,17 @@ body{
 @media screen and (max-width: 576px) {
   .nav-list{
     display: none;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    margin: 28px 0;
+  }
+  .banner-collum{
+    width: calc(100% - 32px);
+    
+  }
+  .banner-heading{
+    font-size: 1.5rem;
   }
   
 }
