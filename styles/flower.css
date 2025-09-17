@@ -112,11 +112,13 @@ h4{
   font-size: 22px;
   font-weight: 700;
   margin: 20px 0 30px 0;
+  text-align: center;
 }
 h5{
   font-size: 22px;
   font-weight: 500;
   margin: 30px 0 0 0;
+  text-align: center;
 
 }
 .btn{
@@ -145,12 +147,72 @@ h5{
   font-size: 24px;
 
 }
+.badge-container{
+  position: relative;
+}
 .badge{
-  width: 28%;
   position: absolute;
-  left: 420px;
+  top: -35%;
+  left: 50%;
+  width: 70%;
 }
 
+/* Lets deal section*/
+.deal-description{
+  text-align: center;
+  max-width: 880px;
+  margin: 120px auto;
+}
+.deal-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 28px;
+  
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.deal-card{
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.deal-card img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.overly {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.deal-offer{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.deal-anchor{
+  font-size: 16px;
+  font-weight: 550;
+  color: #fff;
+}
+.big{
+  font-size: 40px;
+
+}
+.big2{
+  font-size: 28px;
+}
 
 
 
@@ -194,5 +256,14 @@ h5{
   }
   .badge{
     display: none;
+  }
+  .deal-container{
+    grid-template-columns: 1fr;
+  }
+  .big{
+    font-size: 20px;
+  }
+  .big2{
+    font-size: 16px;
   }
 }
